@@ -1086,7 +1086,7 @@ def main():
     # Only show welcome page if not logged in
     if not st.session_state.get('logged_in', False):
         st.title("Welcome to Neuro")
-
+        
         # Demonstrate basic functionality without requiring login
         st.markdown("""
         ### Smart Savings Made Simple
@@ -1095,7 +1095,7 @@ def main():
         - Smart investment allocations
         - Goal tracking
         - AI-powered financial advice
-
+        
         Register or login to start your saving journey today!
         """)
         return  # Exit the main function if not logged in
@@ -1105,6 +1105,5 @@ def main():
 
     # Display the dashboard
     display_dashboard()
-
 if __name__ == "__main__":
     main()
