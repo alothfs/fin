@@ -1083,28 +1083,6 @@ def display_dashboard():
     </div>
     """, unsafe_allow_html=True)
 
-def main():
-    # Only show welcome page if not logged in
-    if not st.session_state.get('log_in', False):
-        st.title("Welcome to Neuro")
-        
-        # Demonstrate basic functionality without requiring login
-        st.markdown("""
-        ### Smart Savings Made Simple
-        Startive helps you save money automatically through:
-        - Round-up transactions
-        - Smart investment allocations
-        - Goal tracking
-        - AI-powered financial advice
-        
-        Register or login to start your saving journey today!
-        """)
-        return  # Exit the main function if not logged in
-        # Initialize ML models and other functionalities
-    initialize_ml_models()
-
-    # Display the dashboard
-    display_dashboard()
 
   
 if __name__ == "__main__":
