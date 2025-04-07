@@ -1100,10 +1100,6 @@ def main():
         """)
         return  # Exit the main function if not logged in
 
-    # Initialize ML models and other functionalities
-    initialize_ml_models()
-
-    # Display the dashboard
-    display_dashboard()
+  
 if __name__ == "__main__":
     main()
