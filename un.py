@@ -1083,6 +1083,16 @@ def display_dashboard():
         </p>
     </div>
     """, unsafe_allow_html=True)
+def register_function(username, password, email):
+    # Code to register a new user goes here
+    # For example, you can store the user's information in a database
+    print(f"New user registered: {username}, {email}")
+
+def login_function(username, password):
+    # Code to login an existing user goes here
+    # For example, you can check the user's credentials against a database
+    print(f"User  logged in: {username}")
+
 def main():
     # Only show welcome page if not logged in
     if not st.session_state.get('logged_in', False):
@@ -1116,5 +1126,7 @@ def main():
     # Display the dashboard
     display_dashboard()
 
+if __name__ == "__main__":
+    main()
 if __name__ == "__main__":
     main()
