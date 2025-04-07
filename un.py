@@ -1084,7 +1084,7 @@ def display_dashboard():
 
 def main():
     # Only show welcome page if not logged in
-    if not st.session_state.get('log_in', False):
+    #if not st.session_state.get('log_in', False):
         st.title("Welcome to Neuro")
         
         # Demonstrate basic functionality without requiring login
