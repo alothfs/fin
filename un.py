@@ -1126,7 +1126,6 @@ def main():
     # Display the dashboard
     display_dashboard()
 
-if __name__ == "__main__":
-    main()
+
 if __name__ == "__main__":
     main()
