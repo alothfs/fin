@@ -25,7 +25,7 @@ import streamlit as st
 warnings.filterwarnings('ignore')
 
 # Add these functions after the existing imports and before the page config
-def main():
+
     
  def get_user_risk_preference(user_id):
     conn = sqlite3.connect('startive.db')
@@ -1084,7 +1084,41 @@ def display_dashboard():
     </div>
     """, unsafe_allow_html=True)
 
+def main():
+    # Only show welcome page if not logged in
+    if not st.session_state.get('logged_in', False):
+        st.title("Welcome to Neuro")
 
+        # Login and register frontend
+        col1, col2 = st.columns([1, 1])
+
+        with col1:
+            st.markdown("<h4>Login</h4>", unsafe_allow_html=True)
+            username = st.text_input("Username")
+            password = st.text_input("Password", type="password")
+            if st.button("Login"):
+                # Call login function
+                login_function(username, password)
+
+        with col2:
+            st.markdown("<h4>Register</h4>", unsafe_allow_html=True)
+            username = st.text_input("Username")
+            password = st.text_input("Password", type="password")
+            email = st.text_input("Email")
+            if st.button("Register"):
+                # Call register function
+                register_function(username, password, email)
+
+        return  # Exit the main function if not logged in
+
+    # Initialize ML models and other functionalities
+    initialize_ml_models()
+
+    # Display the dashboard
+    display_dashboard()
+
+if __name__ == "__main__":
+    main()
   
 if __name__ == "__main__":
     main()
