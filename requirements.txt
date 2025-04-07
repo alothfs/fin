@@ -7,5 +7,5 @@ pillow
 scikit-learn
 matplotlib
 tensorflow
-nlkt
+nltk
 
