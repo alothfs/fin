@@ -26,7 +26,8 @@ warnings.filterwarnings('ignore')
 
 # Add these functions after the existing imports and before the page config
 def main():
-def get_user_risk_preference(user_id):
+    
+ def get_user_risk_preference(user_id):
     conn = sqlite3.connect('startive.db')
     c = conn.cursor()
 
