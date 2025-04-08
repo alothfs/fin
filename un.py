@@ -698,17 +698,6 @@ def predict_future_expenses():
  # Dashboard components
 def display_dashboard():
      st.markdown("<h2>Dashboard</h2>", unsafe_allow_html=True)
-    # Add button to set risk profile
-    if st.button("Set Risk Profile"):
-        set_risk_profile()
-
-    # Add button for Automated Micro-Investing
-    if st.button("Automate Micro-Investing"):
-        automated_micro_investing()
-
-    # Add button for Intelligent Fund Allocation
-    if st.button("Intelligent Fund Allocation"):
-        intelligent_fund_allocation()
 
      # Top action: Add transaction button
      col1, col2, col3 = st.columns([1, 1, 1])
@@ -876,6 +865,7 @@ def display_dashboard():
      if st.button("Add New Goal"):
          navigate_to("goals")
          st.rerun()
+         
 
  # Savings and Investments components
 def display_savings():
@@ -989,6 +979,20 @@ def display_savings():
              if st.button("Upgrade Subscription"):
                  navigate_to("subscription")
                  st.rerun()
+                 
+     # Add button to set risk profile
+    if st.button("Set Risk Profile"):
+        set_risk_profile()
+
+    # Add button for Automated Micro-Investing
+    if st.button("Automate Micro-Investing"):
+        automated_micro_investing()
+
+    # Add button for Intelligent Fund Allocation
+    if st.button("Intelligent Fund Allocation"):
+        intelligent_fund_allocation()
+
+
 
  # Transactions and analysis components
 def display_transactions():
@@ -1844,6 +1848,9 @@ def initialize_session_state():
      # First login flag
      if 'first_login' not in st.session_state:
          st.session_state.first_login = True
+         
+    if 'risk_profile' not in st.session_state:
+         st.session_state.risk_profile = 'Moderate'
 
  # Custom styles
 def apply_custom_styles():
