@@ -1958,7 +1958,7 @@ def display_sidebar():
          # Add button to set risk profile
          if st.button("Set Risk Profile"):
             set_risk_profile()
-             st.rerun()
+            st.rerun()
          # Add button for Automated Micro-Investing
          if st.button("Automate Micro-Investing"):
             automated_micro_investing()
