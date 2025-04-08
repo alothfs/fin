@@ -1849,7 +1849,7 @@ def initialize_session_state():
      if 'first_login' not in st.session_state:
          st.session_state.first_login = True
          
-    if 'risk_profile' not in st.session_state:
+     if 'risk_profile' not in st.session_state:
          st.session_state.risk_profile = 'Moderate'
 
  # Custom styles
