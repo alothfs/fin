@@ -980,17 +980,17 @@ def display_savings():
                  navigate_to("subscription")
                  st.rerun()
                  
-     # Add button to set risk profile
-    if st.button("Set Risk Profile"):
-        set_risk_profile()
+    # Add button to set risk profile
+if st.button("Set Risk Profile"):
+    set_risk_profile()
 
-    # Add button for Automated Micro-Investing
-    if st.button("Automate Micro-Investing"):
-        automated_micro_investing()
+# Add button for Automated Micro-Investing
+if st.button("Automate Micro-Investing"):
+    automated_micro_investing()
 
-    # Add button for Intelligent Fund Allocation
-    if st.button("Intelligent Fund Allocation"):
-        intelligent_fund_allocation()
+# Add button for Intelligent Fund Allocation
+if st.button("Intelligent Fund Allocation"):
+    intelligent_fund_allocation()
 
 
 
