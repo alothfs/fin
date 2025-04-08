@@ -1958,15 +1958,15 @@ def display_sidebar():
          # Add button to set risk profile
          if st.button("Set Risk Profile"):
             set_risk_profile()
-            st.rerun()
+          
          # Add button for Automated Micro-Investing
          if st.button("Automate Micro-Investing"):
             automated_micro_investing()
-            st.rerun()
+            
         # Add button for Intelligent Fund Allocation
          if st.button("Intelligent Fund Allocation"):
             intelligent_fund_allocation()
-            st.rerun()
+            
              
          if st.button("Subscription", use_container_width=True):
              navigate_to("subscription")
