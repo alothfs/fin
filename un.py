@@ -1393,7 +1393,7 @@ def display_subscription():
          st.markdown("""
          <div class="subscription-card basic-card">
              <h3>Basic</h3>
-             <h2>€0/month</h2>
+             <h2>€3.99/month</h2>
              <p>Start your financial journey</p>
              <hr>
              <ul>
@@ -1417,7 +1417,7 @@ def display_subscription():
          st.markdown("""
          <div class="subscription-card pro-card">
              <h3>Pro</h3>
-             <h2>€4.99/month</h2>
+             <h2>€9.99/month</h2>
              <p>Advanced insights and planning</p>
              <hr>
              <ul>
@@ -1442,7 +1442,7 @@ def display_subscription():
          st.markdown("""
          <div class="subscription-card elite-card">
              <h3>Elite</h3>
-             <h2>€9.99/month</h2>
+             <h2>€19.99/month</h2>
              <p>Personalized financial assistant</p>
              <hr>
              <ul>
