@@ -59,7 +59,7 @@ st.markdown(f"""
         background-color: {PRIMARY_COLOR};
         padding: 1.5rem;
         border-radius: 10px;
-        color: white;
+        color: blue;
     }}
     .secondary-card {{
         background-color: {SECONDARY_COLOR};
@@ -76,8 +76,8 @@ st.markdown(f"""
         border: 1px solid #e0e0e0;
     }}
     .basic-card {{ background-color: #f8f9fa; }}
-    .pro-card {{ background-color: #e8eaf6; }}
-    .elite-card {{ background-color: #e3f2fd; }}
+    .pro-card {{ background-color: #f8f9fa; }}
+    .elite-card {{ background-color: #f8f9fa; }}
 
     /* Custom CSS for rounded buttons */
     .rounded-button {{
@@ -1357,7 +1357,7 @@ def display_goals():
 
              with col1:
                  st.markdown("""
-                 <div style="padding: 1rem; background-color: #f0f4f8; border-radius: 10px; margin-bottom: 1rem;">
+                 <div style="padding: 1rem; background-color: #f8f9fa; border-radius: 10px; margin-bottom: 1rem;">
                      <h4 style="margin-top: 0;">Emergency Fund</h4>
                      <p>Based on your spending, we recommend an emergency fund of €6,000 (3 months of expenses).</p>
                      <button class="stButton">Add This Goal</button>
@@ -1366,7 +1366,7 @@ def display_goals():
 
              with col2:
                  st.markdown("""
-                 <div style="padding: 1rem; background-color: #f0f4f8; border-radius: 10px; margin-bottom: 1rem;">
+                 <div style="padding: 1rem; background-color: #f8f9fa; border-radius: 10px; margin-bottom: 1rem;">
                      <h4 style="margin-top: 0;">Retirement Savings</h4>
                      <p>We recommend saving €350/month in a retirement account to reach €500,000 by age 65.</p>
                      <button class="stButton">Add This Goal</button>
