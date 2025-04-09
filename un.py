@@ -28,10 +28,10 @@ st.set_page_config(
 
 # Define improved color scheme
 PRIMARY_COLOR = "#4A90E2"  # Blue
-SECONDARY_COLOR = "#F5F5F5"  # Light Gray
+SECONDARY_COLOR = "#4A90E2"  # Light Gray
 ACCENT_COLOR = "#50E3C2"  # Teal
 TEXT_COLOR = "#333333"  # Dark Gray
-LIGHT_TEXT = "#FFFFFF"  # White
+LIGHT_TEXT = "#333333"  # White
 
 # Apply custom CSS
 st.markdown(f"""
